@@ -68,8 +68,20 @@
             <point id="52" firstPoint="19" typeLine="none" mx="0.132292" secondPoint="21" length="Line_C1_C6" name="G6" lineColor="black" type="alongLine" my="0.264583"/>
             <point id="53" firstPoint="20" typeLine="none" mx="0.132292" secondPoint="23" length="Line_D1_D6" name="H6" lineColor="black" type="alongLine" my="0.264583"/>
         </calculation>
-        <modeling/>
-        <details/>
+        <modeling>
+            <point id="54" idObject="7" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="55" idObject="3" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="56" idObject="1" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+            <point id="57" idObject="6" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
+        </modeling>
+        <details>
+            <detail id="58" width="1.5" mx="11.8952" supplement="1" closed="1" name="big tube" my="71.1554">
+                <node idObject="54" mx="0" nodeType="Contour" type="NodePoint" my="0"/>
+                <node idObject="55" mx="0" nodeType="Contour" type="NodePoint" my="0"/>
+                <node idObject="56" mx="0" nodeType="Contour" type="NodePoint" my="0"/>
+                <node idObject="57" mx="0" nodeType="Contour" type="NodePoint" my="0"/>
+            </detail>
+        </details>
         <groups/>
     </draw>
     <draw name="big bottom">
@@ -77,7 +89,18 @@
             <point id="50" mx="0.132292" x="80.119" y="1.05833" name="B" type="single" my="0.264583"/>
             <arc id="51" radius="#Radius/2" angle2="360" center="50" angle1="0" type="simple" color="black"/>
         </calculation>
-        <modeling/>
-        <details/>
+        <modeling>
+            <arc id="59" idObject="51" inUse="true" type="modeling"/>
+            <arc id="61" idObject="51" inUse="true" type="modeling"/>
+        </modeling>
+        <details>
+            <detail id="60" width="1.5" mx="0" supplement="1" closed="1" name="bottom" my="0">
+                <node idObject="59" reverse="0" mx="0" nodeType="Contour" type="NodeArc" my="0"/>
+            </detail>
+            <detail id="62" width="1" mx="0" supplement="1" closed="0" name="Detail" my="0">
+                <node idObject="61" reverse="0" mx="0" nodeType="Contour" type="NodeArc" my="0"/>
+            </detail>
+        </details>
+        <groups/>
     </draw>
 </pattern>
