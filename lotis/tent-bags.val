@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <pattern>
     <!--Pattern created with Valentina (http://www.valentina-project.org/).-->
-    <version>0.2.4</version>
+    <version>0.3.2</version>
     <unit>cm</unit>
     <author/>
     <description/>
@@ -10,32 +10,32 @@
     <increments/>
     <draw name="outer-tent-bag">
         <calculation>
-            <point type="single" x="-0.394387" y="1.08891" id="1" name="A" mx="-1.56426" my="-0.317597"/>
-            <point type="endLine" typeLine="hair" id="2" name="A1" basePoint="1" mx="0.132292" lineColor="black" my="0.264583" angle="0" length="77.25"/>
-            <point type="endLine" typeLine="hair" id="3" name="A2" basePoint="2" mx="0.132292" lineColor="black" my="0.264583" angle="270" length="78.5"/>
-            <point type="endLine" typeLine="hair" id="4" name="A3" basePoint="3" mx="0.132292" lineColor="black" my="0.264583" angle="180" length="77.25"/>
-            <line typeLine="hair" id="5" firstPoint="4" secondPoint="1" lineColor="black"/>
-            <point type="alongLine" typeLine="none" id="6" name="A4" firstPoint="4" secondPoint="3" mx="0.132292" lineColor="black" my="0.264583" length="65"/>
-            <point type="alongLine" typeLine="none" id="7" name="A5" firstPoint="2" secondPoint="1" mx="0.132292" lineColor="black" my="0.264583" length="12.25"/>
-            <line typeLine="hair" id="8" firstPoint="7" secondPoint="6" lineColor="black"/>
-            <point type="alongLine" typeLine="none" id="9" name="A6" firstPoint="6" secondPoint="7" mx="0.132292" lineColor="black" my="0.264583" length="(25*3.14)*0.25"/>
-            <point type="alongLine" typeLine="none" id="10" name="A7" firstPoint="6" secondPoint="7" mx="0.132292" lineColor="black" my="0.264583" length="(25*3.14)*0.75"/>
-            <point type="alongLine" typeLine="none" id="11" name="A8" firstPoint="4" secondPoint="1" mx="0.132292" lineColor="black" my="0.264583" length="(25*3.14)*0.25"/>
-            <point type="alongLine" typeLine="none" id="12" name="A9" firstPoint="4" secondPoint="1" mx="0.132292" lineColor="black" my="0.264583" length="(25*3.14)*0.75"/>
-            <line typeLine="dotLine" id="13" firstPoint="11" secondPoint="9" lineColor="black"/>
-            <line typeLine="dotLine" id="14" firstPoint="10" secondPoint="12" lineColor="black"/>
-            <point type="alongLine" typeLine="none" id="15" name="A10" firstPoint="12" secondPoint="10" mx="0.132292" lineColor="black" my="0.264583" length="Line_A7_A9/3"/>
-            <point type="alongLine" typeLine="none" id="16" name="A11" firstPoint="12" secondPoint="10" mx="0.132292" lineColor="black" my="0.264583" length="Line_A7_A9/3*2"/>
-            <point type="alongLine" typeLine="none" id="17" name="A12" firstPoint="11" secondPoint="9" mx="0.132292" lineColor="black" my="0.264583" length="Line_A8_A6/3"/>
-            <point type="alongLine" typeLine="none" id="18" name="A13" firstPoint="11" secondPoint="9" mx="0.132292" lineColor="black" my="0.264583" length="Line_A8_A6/3*2"/>
-            <point type="alongLine" typeLine="none" id="19" name="A14" firstPoint="15" secondPoint="12" mx="0.132292" lineColor="black" my="0.264583" length="2.5"/>
-            <point type="alongLine" typeLine="none" id="20" name="A15" firstPoint="15" secondPoint="16" mx="0.132292" lineColor="black" my="0.264583" length="2.5"/>
-            <point type="alongLine" typeLine="none" id="21" name="A16" firstPoint="16" secondPoint="20" mx="0.132292" lineColor="black" my="0.264583" length="2.5"/>
-            <point type="alongLine" typeLine="none" id="22" name="A17" firstPoint="16" secondPoint="10" mx="0.132292" lineColor="black" my="0.264583" length="2.5"/>
-            <point type="alongLine" typeLine="none" id="23" name="A18" firstPoint="18" secondPoint="9" mx="0.132292" lineColor="black" my="0.264583" length="2.5"/>
-            <point type="alongLine" typeLine="none" id="24" name="A19" firstPoint="18" secondPoint="17" mx="0.132292" lineColor="black" my="0.264583" length="2.5"/>
-            <point type="alongLine" typeLine="none" id="25" name="A20" firstPoint="17" secondPoint="18" mx="0.132292" lineColor="black" my="0.264583" length="2.5"/>
-            <point type="alongLine" typeLine="none" id="26" name="A21" firstPoint="17" secondPoint="11" mx="0.132292" lineColor="black" my="0.264583" length="2.5"/>
+            <point id="1" mx="-1.56426" x="-0.394387" y="1.08891" name="A" type="single" my="-0.317597"/>
+            <point id="2" basePoint="1" typeLine="hair" mx="0.132292" length="77.25" name="A1" type="endLine" lineColor="black" angle="0" my="0.264583"/>
+            <point id="3" basePoint="2" typeLine="hair" mx="0.132292" length="78.5" name="A2" type="endLine" lineColor="black" angle="270" my="0.264583"/>
+            <point id="4" basePoint="3" typeLine="hair" mx="0.132292" length="77.25" name="A3" type="endLine" lineColor="black" angle="180" my="0.264583"/>
+            <line id="5" firstPoint="4" typeLine="hair" secondPoint="1" lineColor="black"/>
+            <point id="6" firstPoint="4" typeLine="none" mx="0.132292" secondPoint="3" length="65" name="A4" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="7" firstPoint="2" typeLine="none" mx="0.132292" secondPoint="1" length="12.25" name="A5" type="alongLine" lineColor="black" my="0.264583"/>
+            <line id="8" firstPoint="7" typeLine="hair" secondPoint="6" lineColor="black"/>
+            <point id="9" firstPoint="6" typeLine="none" mx="0.132292" secondPoint="7" length="(25*3.14)*0.25" name="A6" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="10" firstPoint="6" typeLine="none" mx="0.132292" secondPoint="7" length="(25*3.14)*0.75" name="A7" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="11" firstPoint="4" typeLine="none" mx="0.132292" secondPoint="1" length="(25*3.14)*0.25" name="A8" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="12" firstPoint="4" typeLine="none" mx="0.132292" secondPoint="1" length="(25*3.14)*0.75" name="A9" type="alongLine" lineColor="black" my="0.264583"/>
+            <line id="13" firstPoint="11" typeLine="dotLine" secondPoint="9" lineColor="black"/>
+            <line id="14" firstPoint="10" typeLine="dotLine" secondPoint="12" lineColor="black"/>
+            <point id="15" firstPoint="12" typeLine="none" mx="0.132292" secondPoint="10" length="Line_A7_A9/3" name="A10" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="16" firstPoint="12" typeLine="none" mx="0.132292" secondPoint="10" length="Line_A7_A9/3*2" name="A11" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="17" firstPoint="11" typeLine="none" mx="0.132292" secondPoint="9" length="Line_A8_A6/3" name="A12" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="18" firstPoint="11" typeLine="none" mx="0.132292" secondPoint="9" length="Line_A8_A6/3*2" name="A13" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="19" firstPoint="15" typeLine="none" mx="0.132292" secondPoint="12" length="2.5" name="A14" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="20" firstPoint="15" typeLine="none" mx="0.132292" secondPoint="16" length="2.5" name="A15" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="21" firstPoint="16" typeLine="none" mx="0.132292" secondPoint="20" length="2.5" name="A16" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="22" firstPoint="16" typeLine="none" mx="0.132292" secondPoint="10" length="2.5" name="A17" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="23" firstPoint="18" typeLine="none" mx="0.132292" secondPoint="9" length="2.5" name="A18" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="24" firstPoint="18" typeLine="none" mx="0.132292" secondPoint="17" length="2.5" name="A19" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="25" firstPoint="17" typeLine="none" mx="0.132292" secondPoint="18" length="2.5" name="A20" type="alongLine" lineColor="black" my="0.264583"/>
+            <point id="26" firstPoint="17" typeLine="none" mx="0.132292" secondPoint="11" length="2.5" name="A21" type="alongLine" lineColor="black" my="0.264583"/>
         </calculation>
         <modeling/>
         <details/>
