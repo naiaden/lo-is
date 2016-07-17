@@ -9,16 +9,23 @@
     <measurements/>
     <increments>
         <increment formula="2" description="Width of the webbing" name="#Webbing"/>
+        <increment formula="3" description="" name="#MBuckle"/>
+        <increment formula="2.5" description="" name="#FBuckle"/>
+        <increment formula="5" description="" name="#Buckles"/>
         <increment formula="12.5" description="" name="#Top"/>
-        <increment formula="25" description="" name="#Radius"/>
-        <increment formula="#Radius/2*2*3.14" description="" name="#Width"/>
-        <increment formula="65" description="" name="#Height"/>
+        <increment formula="25" description="" name="#BRadius"/>
+        <increment formula="#BRadius/2*2*3.14" description="" name="#BWidth"/>
+        <increment formula="55" description="" name="#BHeight"/>
+        <increment formula="70" description="" name="#SHeight"/>
+        <increment formula="18" description="" name="#SRadius"/>
+        <increment formula="#SRadius/2*2*3.14" description="" name="#SWidth"/>
+        <increment formula="(#BWidth/2-#BRadius)/2" description="" name="#BTopOverlap"/>
     </increments>
     <draw name="big tube">
         <calculation>
             <point id="1" mx="0.132292" x="-7.34968" y="-2.29763" name="A" type="single" my="0.264583"/>
-            <point id="2" basePoint="1" typeLine="hair" mx="0.132292" length="#Height" name="A1" lineColor="black" type="endLine" angle="0" my="0.264583"/>
-            <point id="3" basePoint="1" typeLine="hair" mx="0.132292" length="#Width" name="A2" lineColor="black" type="endLine" angle="270" my="0.264583"/>
+            <point id="2" basePoint="1" typeLine="hair" mx="0.132292" length="#BHeight" name="A1" lineColor="black" type="endLine" angle="0" my="0.264583"/>
+            <point id="3" basePoint="1" typeLine="hair" mx="0.132292" length="#BWidth" name="A2" lineColor="black" type="endLine" angle="270" my="0.264583"/>
             <point id="4" basePoint="3" typeLine="hair" mx="0.132292" length="Line_A_A1" name="A3" lineColor="black" type="endLine" angle="0" my="0.264583"/>
             <line id="5" firstPoint="4" typeLine="hair" secondPoint="2" lineColor="black"/>
             <point id="6" basePoint="2" typeLine="hair" mx="0.132292" length="#Top" name="A4" lineColor="black" type="endLine" angle="0" my="0.264583"/>
@@ -51,12 +58,12 @@
             <point id="33" firstPoint="6" typeLine="none" mx="0.132292" secondPoint="2" length="#Webbing" name="J1" lineColor="black" type="alongLine" my="0.264583"/>
             <point id="34" firstPoint="7" typeLine="none" mx="0.132292" secondPoint="4" length="#Webbing" name="J2" lineColor="black" type="alongLine" my="0.264583"/>
             <line id="35" firstPoint="34" typeLine="dotLine" secondPoint="33" lineColor="black"/>
-            <point id="36" firstPoint="12" typeLine="none" mx="0.132292" secondPoint="13" length="#Height/4-#Webbing*1.25" name="C4" lineColor="black" type="alongLine" my="0.264583"/>
-            <point id="37" firstPoint="12" typeLine="none" mx="0.132292" secondPoint="13" length="#Height/4+#Webbing*1.25" name="C6" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="36" firstPoint="12" typeLine="none" mx="0.132292" secondPoint="13" length="#BHeight/4-#Webbing*1.25" name="C4" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="37" firstPoint="12" typeLine="none" mx="0.132292" secondPoint="13" length="#BHeight/4+#Webbing*1.25" name="C6" lineColor="black" type="alongLine" my="0.264583"/>
             <point id="38" firstPoint="15" typeLine="none" mx="0.132292" secondPoint="16" length="Line_C1_C4" name="D4" lineColor="black" type="alongLine" my="0.264583"/>
             <point id="39" firstPoint="15" typeLine="none" mx="0.132292" secondPoint="16" length="Line_C1_C6" name="D6" lineColor="black" type="alongLine" my="0.264583"/>
-            <point id="40" firstPoint="12" typeLine="none" mx="0.132292" secondPoint="13" length="#Height/4*3-#Webbing*1.25" name="C8" lineColor="black" type="alongLine" my="0.264583"/>
-            <point id="41" firstPoint="12" typeLine="none" mx="0.132292" secondPoint="13" length="#Height/4*3+#Webbing*1.25" name="C10" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="40" firstPoint="12" typeLine="none" mx="0.132292" secondPoint="13" length="#BHeight/4*3-#Webbing*1.25" name="C8" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="41" firstPoint="12" typeLine="none" mx="0.132292" secondPoint="13" length="#BHeight/4*3+#Webbing*1.25" name="C10" lineColor="black" type="alongLine" my="0.264583"/>
             <point id="42" firstPoint="15" typeLine="none" mx="0.132292" secondPoint="16" length="Line_C1_C8" name="D8" lineColor="black" type="alongLine" my="0.264583"/>
             <point id="43" firstPoint="15" typeLine="none" mx="0.132292" secondPoint="16" length="Line_C1_C10" name="D10" lineColor="black" type="alongLine" my="0.264583"/>
             <point id="44" firstPoint="19" typeLine="none" mx="0.132292" secondPoint="21" length="Line_C1_C4" name="G4" lineColor="black" type="alongLine" my="0.264583"/>
@@ -67,6 +74,8 @@
             <point id="49" firstPoint="19" typeLine="none" mx="0.132292" secondPoint="21" length="Line_C1_C10" name="G10" lineColor="black" type="alongLine" my="0.264583"/>
             <point id="52" firstPoint="19" typeLine="none" mx="0.132292" secondPoint="21" length="Line_C1_C6" name="G6" lineColor="black" type="alongLine" my="0.264583"/>
             <point id="53" firstPoint="20" typeLine="none" mx="0.132292" secondPoint="23" length="Line_D1_D6" name="H6" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="63" firstPoint="9" typeLine="none" mx="0.132292" secondPoint="10" length="#BHeight-#BTopOverlap-#Buckles" name="X1" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="64" firstPoint="18" typeLine="none" mx="0.132292" secondPoint="25" length="#BHeight-#BTopOverlap-#Buckles" name="X2" lineColor="black" type="alongLine" my="0.264583"/>
         </calculation>
         <modeling>
             <point id="54" idObject="7" inUse="true" mx="0.132292" type="modeling" my="0.264583"/>
@@ -87,7 +96,7 @@
     <draw name="big bottom">
         <calculation>
             <point id="50" mx="0.132292" x="80.119" y="1.05833" name="B" type="single" my="0.264583"/>
-            <arc id="51" radius="#Radius/2" angle2="360" center="50" angle1="0" type="simple" color="black"/>
+            <arc id="51" radius="#BRadius/2" angle2="360" center="50" angle1="0" type="simple" color="black"/>
         </calculation>
         <modeling>
             <arc id="59" idObject="51" inUse="true" type="modeling"/>
