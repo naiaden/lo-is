@@ -16,10 +16,11 @@
         <increment formula="25" description="" name="#BRadius"/>
         <increment formula="#BRadius/2*2*3.14" description="" name="#BWidth"/>
         <increment formula="55" description="" name="#BHeight"/>
-        <increment formula="70" description="" name="#SHeight"/>
+        <increment formula="62" description="" name="#SHeight"/>
         <increment formula="18" description="" name="#SRadius"/>
         <increment formula="#SRadius/2*2*3.14" description="" name="#SWidth"/>
         <increment formula="(#BWidth/2-#BRadius)/2" description="" name="#BTopOverlap"/>
+        <increment formula="(#SWidth/2-#SRadius)/2" description="" name="#STopOverlap"/>
     </increments>
     <draw name="big tube">
         <calculation>
@@ -110,6 +111,69 @@
                 <node idObject="61" reverse="0" mx="0" nodeType="Contour" type="NodeArc" my="0"/>
             </detail>
         </details>
+        <groups/>
+    </draw>
+    <draw name="small tube">
+        <calculation>
+            <point id="65" mx="0.132292" x="0" y="90.18" name="C" type="single" my="0.264583"/>
+            <point id="66" basePoint="65" typeLine="hair" mx="0.132292" length="#SHeight" name="C5" lineColor="black" type="endLine" angle="0" my="0.264583"/>
+            <point id="67" basePoint="66" typeLine="hair" mx="0.132292" length="12.5" name="C7" lineColor="black" type="endLine" angle="0" my="0.264583"/>
+            <point id="68" basePoint="67" typeLine="hair" mx="0.132292" length="#SWidth" name="C9" lineColor="black" type="endLine" angle="270" my="0.264583"/>
+            <point id="69" basePoint="68" typeLine="hair" mx="0.132292" length="12.5" name="C11" lineColor="black" type="endLine" angle="180" my="0.264583"/>
+            <point id="70" basePoint="69" typeLine="hair" mx="0.132292" length="#SHeight" name="C12" lineColor="black" type="endLine" angle="180" my="0.264583"/>
+            <line id="71" firstPoint="70" typeLine="hair" secondPoint="65" lineColor="black"/>
+            <line id="72" firstPoint="69" typeLine="hair" secondPoint="66" lineColor="black"/>
+            <point id="73" firstPoint="67" typeLine="none" mx="0.132292" secondPoint="66" length="#Webbing" name="J3" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="74" firstPoint="68" typeLine="none" mx="0.132292" secondPoint="69" length="#Webbing" name="J4" lineColor="black" type="alongLine" my="0.264583"/>
+            <line id="75" firstPoint="74" typeLine="dotLine" secondPoint="73" lineColor="black"/>
+            <point id="76" firstPoint="65" typeLine="none" mx="0.132292" secondPoint="70" length="Line_C12_C/4" name="K1" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="77" firstPoint="67" typeLine="none" mx="0.257576" secondPoint="68" length="Line_C_K1" name="K3" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="78" firstPoint="65" typeLine="none" mx="0.132292" secondPoint="76" length="Line_C_K1-#Webbing/2" name="L1" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="79" firstPoint="65" typeLine="none" mx="0.132292" secondPoint="76" length="Line_C_K1+#Webbing/2" name="M1" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="80" firstPoint="67" typeLine="none" mx="0.132292" secondPoint="77" length="Line_C_K1-#Webbing/2" name="L3" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="81" firstPoint="67" typeLine="none" mx="0.132292" secondPoint="77" length="Line_C_K1+#Webbing/2" name="M3" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="82" firstPoint="65" typeLine="none" mx="0.132292" secondPoint="70" length="Line_C12_C/4*3" name="N1" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="83" firstPoint="67" typeLine="none" mx="0.132292" secondPoint="68" length="Line_C_N1" name="N3" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="84" firstPoint="65" typeLine="none" mx="0.132292" secondPoint="82" length="Line_C_N1-#Webbing/2" name="O1" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="85" firstPoint="65" typeLine="none" mx="0.132292" secondPoint="82" length="Line_C_N1+#Webbing/2" name="P1" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="86" firstPoint="67" typeLine="none" mx="0.132292" secondPoint="83" length="Line_C_N1-#Webbing/2" name="O3" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="87" firstPoint="67" typeLine="none" mx="0.132292" secondPoint="83" length="Line_C_N1+#Webbing/2" name="P3" lineColor="black" type="alongLine" my="0.264583"/>
+            <line id="88" firstPoint="78" typeLine="dotLine" secondPoint="80" lineColor="black"/>
+            <line id="89" firstPoint="79" typeLine="dotLine" secondPoint="81" lineColor="black"/>
+            <line id="90" firstPoint="84" typeLine="dotLine" secondPoint="86" lineColor="black"/>
+            <line id="91" firstPoint="85" typeLine="dotLine" secondPoint="87" lineColor="black"/>
+            <line id="92" firstPoint="82" typeLine="dashLine" secondPoint="83" lineColor="black"/>
+            <line id="93" firstPoint="76" typeLine="dashLine" secondPoint="77" lineColor="black"/>
+            <point id="94" firstPoint="78" typeLine="none" mx="0.132292" secondPoint="80" length="#SHeight/4-#Webbing*1.25" name="L4" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="95" firstPoint="78" typeLine="none" mx="0.132292" secondPoint="80" length="#SHeight/4+#Webbing*1.25" name="L6" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="96" firstPoint="78" typeLine="none" mx="0.132292" secondPoint="80" length="#SHeight/4*3-#Webbing*1.25" name="L8" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="97" firstPoint="78" typeLine="none" mx="0.132292" secondPoint="80" length="#SHeight/4*3+#Webbing*1.25" name="L10" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="98" firstPoint="79" typeLine="none" mx="0.132292" secondPoint="81" length="Line_L1_L4" name="M4" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="99" firstPoint="79" typeLine="none" mx="0.132292" secondPoint="81" length="Line_L1_L6" name="M6" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="100" firstPoint="79" typeLine="none" mx="0.132292" secondPoint="81" length="Line_L1_L8" name="M8" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="101" firstPoint="79" typeLine="none" mx="0.132292" secondPoint="81" length="Line_L1_L10" name="M10" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="102" firstPoint="84" typeLine="none" mx="0.132292" secondPoint="86" length="Line_L1_L4" name="O4" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="103" firstPoint="84" typeLine="none" mx="0.132292" secondPoint="86" length="Line_L1_L6" name="O6" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="104" firstPoint="84" typeLine="none" mx="0.132292" secondPoint="86" length="Line_L1_L8" name="O8" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="105" firstPoint="84" typeLine="none" mx="0.132292" secondPoint="86" length="Line_L1_L10" name="O10" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="106" firstPoint="85" typeLine="none" mx="0.132292" secondPoint="87" length="Line_L1_L4" name="P4" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="107" firstPoint="85" typeLine="none" mx="0.132292" secondPoint="87" length="Line_L1_L6" name="P6" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="108" firstPoint="85" typeLine="none" mx="0.132292" secondPoint="87" length="Line_L1_L8" name="P8" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="109" firstPoint="85" typeLine="none" mx="0.132292" secondPoint="87" length="Line_L1_L10" name="P10" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="110" firstPoint="76" typeLine="none" mx="0.132292" secondPoint="77" length="#SHeight-#STopOverlap-#Buckles" name="X3" lineColor="black" type="alongLine" my="0.264583"/>
+            <point id="111" firstPoint="82" typeLine="none" mx="0.132292" secondPoint="83" length="Line_K1_X3" name="C13" lineColor="black" type="alongLine" my="0.264583"/>
+        </calculation>
+        <modeling/>
+        <details/>
+        <groups/>
+    </draw>
+    <draw name="small bottom">
+        <calculation>
+            <point id="112" mx="0.132292" x="80.209" y="31.27" name="D" type="single" my="0.264583"/>
+            <arc id="113" radius="#SRadius/2" angle2="360" center="112" angle1="0" type="simple" color="black"/>
+        </calculation>
+        <modeling/>
+        <details/>
         <groups/>
     </draw>
 </pattern>
